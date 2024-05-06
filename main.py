@@ -50,7 +50,7 @@ async def async_query_processor(queries, db):
             prompt += f"{passage}\n"
         prompt += "\nWhich is the most accurate category for our accounting department to select for this expense? Output only the category name (including subfolders if they were provided) and nothing else."
         completion = openai_client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4-turbo",
             messages=[
                 {"role": "system", "content": "This is an Accounts Payable Tool to Categorize Expenses"},
                 {"role": "user", "content": prompt}
