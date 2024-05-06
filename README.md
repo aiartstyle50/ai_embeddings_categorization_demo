@@ -2,23 +2,23 @@
 
 This tool uses AI to categorize financial expenses for an Accounts Payable department. It uses embeddings and a prompt for each individual categorization task, allowing it to mimic a human manual categorization process much closer than other methods.
 
-##Why This Method vs. Fine Tuning?
+## Why This Method vs. Fine Tuning?
 
 There are several advantages to using embeddings with a prompt vs. using a fine tuned model.
 
-###Flexibility
+### Flexibility
 
 Since you aren't fine-tuning on a specific dataset, the program can handle a wide vareity of input data. So if you fine-tuned a model to categorize expenses based on one type of input data it might be unable to categorize expenses for another type of input data. This method, on the other hand, is agnostic of input data type.
 
-###Accuracy
+### Accuracy
 
 Since we are bringing in a Chat Completion call into the categorization process, we're making the process closer to human-level thought. Instead of just suggesting a likely category based on the fine-tuning data, the LLM call resemebles more of the process of 'thinking through' the various options before deciding, similar to how a human would.
 
-###Training Data Not Required
+### Training Data Not Required
 
 Unlike fine-tuning this method requires no training data. It only requires your list of target categories and the items you want to categorize. This can be an especially difficult process when you are dealing with thousands of categories, which can require millions of examples in your training dataset in order to properly train.
 
-###Other Thoughts
+### Other Thoughts
 
 There will be cases where this method is preferable and others where fine-tuning is a better option. I suggest this method will likely be preferable where accuracy or flexibility is key or if the training data for fine-tuning would be difficult to aquire. This method can also be enchanced by providing few-shot examples in the prompt tailored to your specific use-case.
 
