@@ -1,4 +1,4 @@
-# AI Categorization Tool for Accounts Payable Departments
+# AI Categorization Tool for Accounts Payable Departments - Categorizing Finances with Embeddings + Prompts
 
 This tool uses AI to categorize financial expenses for an Accounts Payable department. It uses embeddings and a prompt for each individual categorization task, allowing it to mimic a human manual categorization process much closer than other methods.
 
