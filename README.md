@@ -35,4 +35,4 @@ The results are saved in a CSV file with two columns: 'Input Item' and 'Matched 
 
 ## Important Note
 
-The tool uses OpenAI's text-embedding-3-large model for embeddings and GPT-4 for the decision making. Make sure you have access to these models in your OpenAI account.
+Current speed is relatively slow but the quality of output may be higher than other methods due to the addition of a GPT-4 prompt for each individual categorization. Current categories are just examples, replace them with your own. You can also add few-shot examples to the prompt in order to improve performance for your specific use case.
