@@ -14,11 +14,11 @@ This tool requires the following Python libraries:
 
 ## How to use
 
-1. Prepare your data: You need two CSV files. One for the financial categories and another for the items to categorize. Each file should contain one item per line.
+1. Prepare your data: You need two CSV files. One for the financial categories and another for the items to categorize. Each file should contain one item per line (feel free to use the example files in this repo).
 
 2. Set your OpenAI API key: Replace "your_open_ai_key" with your actual OpenAI API key in the code.
 
-3. Run the tool: Call the `process_input_files` function with the paths to your CSV files as arguments.
+3. Run the tool: Call the `process_input_files` function with the paths to your CSV files as arguments by running the main.py file.
 
 ```python
 if __name__ == "__main__":
